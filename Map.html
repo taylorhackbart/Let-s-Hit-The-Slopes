@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css"/>
+  <title>Map</title>
+</head>
+
+<body>
+  <!-- BACKGROUND IMAGE -->
+  <style>
+    body {
+      background-image: url('https://www.powderhounds.com/site/DefaultSite/filesystem/images/Europe/Italy/Pila/overview/07.jpg')
+    }
+  </style>
+  <!-- NAV BAR FROM BOOTSTRAP WITH LINK MODIFICATIONS-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">Lets Hit The Slopes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="./index.html">Home</a>
+        <a class="nav-link active" href="./Map.html">Map<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="./Credits.html">Credits</a>
+      </div>
+    </div>
+  </nav>
+ 
+
+<!-- BEGINNING OF PILA RUNS ROW-->
+<table style="width:100%">
+  <tr> 
+      <div colspan="2">
+      <h2>Pila Ski Resort</h2>
+      </div>
+  </tr>
+  <tr>
+    <!-- PILA RUNS IMAGE -->
+      <td colspan="6"> <img id="runs_image" src="assets/pila-runs.png" alt="..." onclick="window.open('assets/pila-runs.png','_blank');"></td> 
+      <td colspan="6">
+        <div>
+          <p class="map-text">The Pila ski resort is nestled in the Aosta valley region, of northern Italy. From the town of Aosta you can take a cable car directly to the base of the resort.
+              The Pila ski resort sits at an altitude of 1,814 meters (5,951 feet) above sea level, and the highest pistes (ski runs) will take you to an altitude of 2,700 meters (8,858 feet)!
+              While there you will find that you have plenty to do with a total of 24 ski runs including:
+          </p>
+          <ul >
+              <li class="ski-list">Four blue runs</li>
+              <li class="ski-list">Twenty nine red runs</li>
+              <li class="ski-list">Four black runs</li>
+              <li class="ski-list">Pipezone</li>
+              <li class="ski-list">Slopestyle zone</li>
+          </ul>
+        </div>
+      </td>
+  </tr>
+  </table>
+  
+  <!-- BEGINNING OF INTERACTIVE GOOGLE MAPS -->
+  <h2 class="google"> Interactive Google Map of Resort and Ski Area </h2>
+  <div class="row">
+  <div class= "col-md-5">
+  <div class="map-responsive"  id="google-map">
+    <!-- USED IFRAME FOR INTERACTIVE MAP -->
+    <iframe
+    width="100%"
+    height="100%"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBRUX92KyaoIEzkbaZnJhD0Aa7NR2JGrBU
+      &q=Pila,Italy" allowfullscreen>
+  </iframe>
+</div>
+</div>
+<div class="google-text-area  col-md-5">
+  <p id="google-text"> In this Google Map, you can see the proximity of Pila Snowland to the Summit. To expand, click "view larger map" in the upper left hand corner of the map. You can also switch into a satellite view by clicking the box in the bottom left corner. As you zoom out, you will start to see the mountain and all of the runs just South West of the resort. </p>
+  </div>
+</div>
+</div>
+  <div> 
+  <!-- LINK TO PILA SNOWLAND WEBSITE -->
+      <td colspan="12">
+        If you're looking for more information about the Pila Ski Resort checkout: <b>https://pila.it/en/</b>
+      </td>
+  </div>
+  <!-- FOOTER WITH ANIMATION -->
+  <div class="footer">
+    <div id="inner-footer">
+      <img id="animateSki" src="assets/clipart325532 (2).png">
+    </div>
+  </div>
+  </body>
+  </html>
